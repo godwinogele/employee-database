@@ -30,22 +30,22 @@ SELECT * FROM employees;
 
 SELECT first_name, last_name FROM employees;
 
-#	Filter data using WHERE (employees in the IT department).
+#	Filter employees in the IT department.
 
 SELECT * FROM employees WHERE department = 'IT';
 
-# Step 4: Use aggregate functions (e.g., calculate the average salary).
+# Calculating the average salary.
 
 SELECT AVG(salary) AS average_salary FROM employees;
 
-# Step 5: Sort data (e.g., employees by salary in descending order).
+# Sorting employees by salary in descending order.
 
 SELECT * FROM employees ORDER BY salary DESC;
 
-# Task 2: Retrieve employees earning more than $60,000.
+# Retrieve employees earning more than $60,000.
 
 SELECT * FROM employees WHERE salary >60000;
 
-# Task 3: Find the total number of employees in the 'Finance' department.
+# Find the total number of employees in the 'Finance' department.
 
 SELECT COUNT(department = 'Finance') FROM employees;
